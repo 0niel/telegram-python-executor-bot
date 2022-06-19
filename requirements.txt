@@ -1,0 +1,12 @@
+SQLAlchemy
+envparse
+pydantic
+requests
+python-telegram-bot
+psycopg2-binary
+pytz
+python-telegram-bot-pagination
+aiohttp
+beautifulsoup4
+Pillow
+gtts

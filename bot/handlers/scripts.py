@@ -98,7 +98,7 @@ def edit_test_script_code(update: Update, context: ContextTypes) -> int:
     query.edit_message_text(
         "Отправьте отредактированный код для вашего скрипта. "
         "В качестве отступов мы используем 4 пробела. "
-        "Чтобы избежать форматирования Markdown, отправьте ваш код как моноширный."
+        "Чтобы избежать форматирования Markdown, отправьте ваш код как моноширинный."
     )
 
     return ScriptSaveStates.SELECT_CODE
@@ -190,7 +190,7 @@ def save_script_desc(update: Update, context: ContextTypes) -> int:
     update.message.reply_text(
         "Великолепно! А теперь, пожалуйста, отправьте код вашего скрипта. "
         "В качестве отступов мы используем 4 пробела. "
-        "Чтобы избежать форматирования Markdown, отправьте ваш код как моноширный."
+        "Чтобы избежать форматирования Markdown, отправьте ваш код как моноширинный."
     )
 
     return ScriptSaveStates.SELECT_CODE
@@ -223,7 +223,7 @@ def save_script(update: Update, context: ContextTypes) -> int:
     context.user_data["create_script"] = {"name": script_name}
     update.message.reply_text(
         "Отлично! Теперь задайте описание своему скрипту. "
-        "Описание будет отображаться в списке всех скриптов (/scripst). "
+        "Описание будет отображаться в списке всех скриптов (/scripts). "
         "Не забудьте указать примеры использования, если это важно.\n\n"
         "Введите /cancel, чтобы отменить создание скрипта."
     )

@@ -15,8 +15,4 @@ RUN mkdir /usr/local/share/fonts/
 
 RUN cp /app/bot/fonts/*  /usr/local/share/fonts/
 
-ADD /files /app/files
-
-ADD /userscripts /app/userscripts
-
 CMD python -m bot
